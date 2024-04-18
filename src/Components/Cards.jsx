@@ -30,10 +30,10 @@ const Cards = ({ title, id, price, imgs }) => {
             <div className="col-lg-3">
                 <div className="card  p-2 position-relative">
                     <div className="imge border rounded p-2 bg-white">
-                        <img className='w-100 rounded' src={imgs} alt="" />
+                        <img style={{height: '230px'}} className='w-100 rounded' src={imgs} alt="" />
                     </div>
                     <div className="text-box">
-                        <h5 className='pt-3 px-3 fw-bold fs-4'>{title}</h5>
+                        <h5 className='pt-3 px-3 fw-bold fs-4'>{title.slice(0, 30)}...</h5>
                         <p className='pt-2 px-3 fs-4'>${price}</p>
                     </div>
                     <div className="Icons d-flex align-items-center  w-100 position-absolute justify-content-around     rounded ">
