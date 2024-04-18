@@ -19,8 +19,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
     return (
         <>
-            <div className="Footer p-5 row w-100">
-                <div className="footer-liks d-flex flex-column col-lg-3 gap-3">
+            <div className="Footer p-5 row w-100 row-gap-5 m-auto">
+                <div className="footer-liks d-flex flex-column col-lg-3 gap-3 ">
                     <h5 className='fs-3 fw-bold mb-3'>Ultras</h5>
                     <Link className='brg' >About us</Link>
                     <Link className='brg' >Conditions</Link>

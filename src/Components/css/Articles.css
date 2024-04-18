@@ -43,3 +43,9 @@
 .Articles .card .Date span {
     color: var(--primary-color);
 }
+
+@media (max-width: 500px) {
+    .Articles{
+        padding: 0px !important;
+    }
+}

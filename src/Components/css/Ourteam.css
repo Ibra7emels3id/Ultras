@@ -29,3 +29,17 @@
     color: var(--grey-color);
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .Ourteam{
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .Ourteam .titles{
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .Ourteam .titles h3{
+        margin: auto;
+    }
+}

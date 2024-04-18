@@ -14,7 +14,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 const Services = () => {
     return (
         <>
-            <div className="Services p-5 flex-wrap d-flex align-items-center justify-content-around border mb-5 mt-5 ">
+            <div className="Services p-5 flex-wrap gap-4 d-flex align-items-center justify-content-around border mb-5 mt-5 ">
                 <div className="Services-box d-flex align-items-center">
                     <LocalShippingIcon className='p-0 m-0 fs-1 icon' />
                     <h6 className='p-0 m-0 fs-4 fw-bold mx-2'>Free shipping </h6>

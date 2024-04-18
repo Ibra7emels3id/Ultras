@@ -7,9 +7,7 @@
     --primary-color: #6995B1;
     --light-primary-color: #eef1f3;
 }
-.Footer{
-    flex-direction: ;
-}
+
 .footer-liks .brg{
     text-decoration: none;
 }
@@ -19,4 +17,13 @@
 .footer-Forever .btn-icon:hover{
     color: #6995B1;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .Footer{
+        text-align: center !important;
+    }
+    .footer-Forever .icons{
+        margin: 50px auto;
+    }
 }

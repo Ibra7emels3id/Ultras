@@ -9,4 +9,7 @@
     .Quote p{
         width: 90% !important;
     }
+    .Quote h4{
+        font-size: 40px;
+    }
 }

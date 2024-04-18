@@ -13,3 +13,23 @@
 .Services .Services-box .icon{
     color: var(--primary-color);
 }
+
+@media (max-width: 600px) {
+    .Services{
+        gap: 100px;
+        flex-direction: column !important;
+    }
+    .Services .Services-box{
+        flex-direction: column !important;
+        gap: 20px;
+    }
+    .Services .Services-box .icon{
+        font-size: 140px !important;
+    }
+    .Services .Services-box h6{
+        font-size: 40px !important;
+    }
+    .Services .Services-box p{
+        font-size: 20px !important;
+    }
+}

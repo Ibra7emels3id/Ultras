@@ -16,17 +16,17 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 const Description = () => {
     return (
         <>
-            <div className="description d-flex align-items-center pb-5 flex-wrap ">
+            <div className="description d-flex align-items-center pb-5  ">
                 <div className="icons-description">
-                    <FormatQuoteIcon sx={{fontSize: '400px', color: '#8d8d8d', width: '100%'}} />
+                    <FormatQuoteIcon className='icon' sx={{fontSize: '400px', color: '#8d8d8d', width: '100%'}} />
                 </div>
                 <Swiper
                 style={{width: '90%'}}
                     spaceBetween={30}
                     loop={true}
-                    autoplay={{
-                        delay: 2000
-                    }}
+                    // autoplay={{
+                    //     delay: 2000
+                    // }}
                     // navigation={true}
                     modules={[Pagination  , Autoplay ]}
                     className="mySwiper"

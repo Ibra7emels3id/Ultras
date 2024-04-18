@@ -10,33 +10,40 @@
 
 .description .swiper {
     height: 400px !important;
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.description .swiper .swiper-wrapper{
+
+.description .swiper .swiper-wrapper {
     height: initial;
 }
-.Description-title{
+
+.Description-title {
     color: var(--primary-color);
 }
-/* .swiper-button-prev{
-    position: absolute;
-    left: 30%;
-    top: 334px;
-    border: 1px solid #6995B1;
-    background-color: #6995B1;
-    padding: 30px 50px;
-    color: #eee;
-    border-radius: 3px;
+
+@media (max-width: 700px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .description .swiper {
+        text-align: center;
+    }
+
+    .description .icons-description {
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .description  .icons-description .icon{
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .description .swiper .Description-slider p {
+        font-size: 18px !important;
+    }
+
 }
-.swiper-button-next{
-    position: absolute;
-    right: 50%;
-    top: 334px;
-    border: 1px solid #6995B1;
-    background-color: #6995B1;
-    padding: 30px 50px;
-    color: #eee;
-    border-radius: 3px;
-} */
