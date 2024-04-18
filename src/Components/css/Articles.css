@@ -1,0 +1,45 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.Articles .card{
+    border: none !important;
+    overflow: hidden;
+
+}
+.Articles .card .img:hover img{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.Articles .card .img{
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.Articles .card .img::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s ease;
+    background-color: #1919194e;
+    transform: scale(0);
+    z-index: 1;
+}
+.Articles .card .img:hover::before{
+    transform: scale(1);
+}
+.Articles .card img{
+    border-radius: 10px; 
+}
+.Articles .card .Date span {
+    color: var(--primary-color);
+}

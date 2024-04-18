@@ -1,0 +1,14 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.brand-collection{
+    padding: 100px 0;
+    background-color: var(--light-grey-color);
+}

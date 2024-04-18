@@ -1,0 +1,58 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.card .text-box h5{
+    cursor: pointer;
+}
+.card .text-box h5:hover{
+    color: var(--primary-color);
+}
+.card .text-box p{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.row .card .imge img{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.row .card .box-title p{
+    color: var(--primary-color);
+}
+
+.titles .btn:hover{
+    color: var(--primary-color) !important;
+}
+
+.row .card .Icons{
+    left: 10%;
+    width: 80% !important;
+    top: 45%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--light-color);
+    text-align: center;
+}
+.row .card:hover .Icons{
+    left: 10%;
+    width: 80% !important;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    text-align: center;
+}
+.row .card .Icons h6{
+    cursor: pointer;
+}
+.row .card .Icons .screen{
+    cursor: pointer;
+}

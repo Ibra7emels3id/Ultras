@@ -1,0 +1,31 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+.Ourteam-imges img{
+    width: 220px;
+}
+.Ourteam-imges .imge .text{
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(38, 35, 35, 0.521);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: 0.05s ease;
+}
+.Ourteam-imges .imge:hover .text{
+    transform: scale(1);
+}
+.Ourteam-imges .imge .text .fs-1:hover{
+    color: var(--grey-color);
+    cursor: pointer;
+}

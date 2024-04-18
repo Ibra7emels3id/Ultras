@@ -1,0 +1,65 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.collection-right .collection-text{
+    width: 400px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+}
+.collection-right .collection-text .CASUAL{
+    color: var(--accent-color);
+}
+
+.collection-right .collection-text .CASUAL{
+    color: var(--accent-color);
+}
+
+.collection-text_title{
+    font-size: 80px;
+}
+
+.collection-left .collection-text{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+@media (max-width: 750px) {
+    .collection-right .collection-text{
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    .collection-right .collection-text p{
+        font-size: 13px;
+    }
+    .collection-right .collection-text .btn{
+        font-size: 13px;
+    }
+    .collection-right .collection-text .collection-text_title{
+        font-size: 40px !important;
+    }
+    .collection-left .position-relative .collection-text  {
+        width: 100% !important;
+    }
+    .collection-left .position-relative .collection-text p {
+        font-size: 12px !important;
+    }
+    .collection-left .position-relative .collection-text h6 {
+        font-size: 35px !important;
+    }
+    .collection-left .position-relative .collection-text .btn {
+        font-size: 15px !important;
+    }
+}

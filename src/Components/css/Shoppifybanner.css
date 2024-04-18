@@ -1,0 +1,36 @@
+.shop-modell {
+    width: 100%;
+    width: 95% !important;
+    margin: auto;
+}
+.modell img{
+    height: 630px !important;
+    width: 100% !important;
+    object-fit: cover;
+    object-position: top;
+}
+.shop-modell .modell-text{
+    top: 20%;
+    left: 50%;
+}
+.shop-modell .modell-text h3{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+@media (max-width: 1092px) {
+    .shop-modell .modell-text{
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .shop-modell .modell-text{
+        width: 90% !important;
+        margin: auto;
+        text-align: center !important;
+    }
+    .shop-modell .modell-text h3{
+        font-size: 40px;
+        font-weight: 900;
+    }
+}

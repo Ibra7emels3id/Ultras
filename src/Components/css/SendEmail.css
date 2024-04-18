@@ -1,0 +1,52 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+.getOffers{
+    width: 90% !important;
+}
+.getOffers .getOffers-input{
+    width: 60%;
+    height: 60px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    border: 1px solid var(--dark-color);
+    background-color: var(--grey-color);
+}
+.getOffers .btn-Subscribe{
+    width: 15%;
+    height: 60px;
+    outline: none;
+    border: none;
+    background-color: var(--dark-color);
+    border-radius: 0;
+    color: var(--light-color);
+}
+
+@media (max-width: 700px) {
+    .getOffers{
+        width: 98% !important;
+        padding: 50px 10px !important;
+    }
+    .getOffers p{
+        font-size: 17px !important;
+    }
+    .getOffers .d-flex{
+        flex-direction: column;
+        margin: auto;
+    }
+    .getOffers .getOffers-input{
+        width: 90%;
+        margin: auto;
+    }
+    .getOffers .btn-Subscribe{
+        width: 35%;
+        margin: 30px auto;
+    }
+}

@@ -1,0 +1,66 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+/* brg */
+.brg {
+    color: #727272;
+}
+
+.swiper {
+    width: 100%;
+    height: 110vh;
+}
+
+.img1 {
+    background-image: url(/images/banner1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1066px;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.img2 {
+    background-image: url(images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 1066px;
+}
+
+.head-Title {
+    font-size: 115px;
+    font-weight: 900 !important;
+    color: var(--dark-color) !important;
+}
+
+.btn-Shop {
+    padding: 20px 70px;
+    background-color: white !important;
+}
+.btn-Shop:hover {
+    color: var(--grey-color);
+    background-color: black !important;
+}
+
+@media (max-width: 775px) {
+    .head-Title {
+        font-size: 56px;
+        font-weight: 900 !important;
+        color: var(--dark-color) !important;
+    }
+    .text-Bg .brg{
+        font-size: 18px !important;
+        width: 90% !important;
+    }
+}

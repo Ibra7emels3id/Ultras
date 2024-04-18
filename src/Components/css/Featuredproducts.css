@@ -1,0 +1,63 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.Featuredproducts{
+    height: 720px !important;
+}
+
+.row .box{
+    height: 500px !important;
+}
+.row .box .imge img{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.row .box .box-title p{
+    color: var(--primary-color);
+}
+
+.titles .btn:hover{
+    color: var(--primary-color) !important;
+}
+
+.row .box .Icons{
+    left: 10%;
+    width: 80% !important;
+    top: 45%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--light-color);
+    text-align: center;
+}
+.row .box:hover .Icons{
+    left: 10%;
+    width: 80% !important;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    text-align: center;
+}
+.row .box .Icons h6{
+    cursor: pointer;
+}
+.row .box .Icons .screen{
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .titles{
+        padding: 50px 0 !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,12 @@
+.Quote{
+    padding: 100px 0 !important;
+}
+.Quote h4{
+    font-size: 60px;
+}
+
+@media (max-width: 992px) {
+    .Quote p{
+        width: 90% !important;
+    }
+}
