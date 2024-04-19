@@ -20,13 +20,13 @@ const CartSlice = createSlice({
             const itempproduct = state.cardItems.findIndex((product) => product.id == action.payload.id)
             if (itempproduct >= 0) {
                 state.cardItems[itempproduct].cardQuantity += 1
-                toast.info(`${state.cardItems[itempproduct].title} هذا المنتج متاح بالفعل `, {
+                toast.info(`The number of products has been increased: ${state.cardItems[itempproduct].title.slice(0, 10)}...`, {
                     position: 'bottom-left'
                 })
             } else {
                 const tempProduct = { ...action.payload, cardQuantity: 1 }
                 state.cardItems.push(tempProduct)
-                toast.success(`${action.payload.title}  تم اضافه منتج جديد   `, {
+                toast.success(`A new product has been added to the cart: ${action.payload.title.slice(0, 20)}...`, {
                     position: 'bottom-left'
                 })
             }
@@ -39,8 +39,9 @@ const CartSlice = createSlice({
                 if (state.cardItems[itempproduct].cardQuantity <= 0) {
                     state.cardItems.splice(itempproduct, 1)
                 }
-            } else {
-                // 
+                toast.error(`Remove the product from the basket: ${action.payload.title.slice(0, 20)}...`, {
+                    position: 'bottom-left'
+                })
             }
             localStorage.setItem('CartSlice', JSON.stringify(state.cardItems))
         },
@@ -48,23 +49,24 @@ const CartSlice = createSlice({
             const Delat = state.cardItems.filter((itme) => itme.id !== action.payload.id)
             state.cardItems = Delat
             localStorage.setItem('CartSlice', JSON.stringify(state.cardItems))
+            toast.error(`Delete the product: ${action.payload.title.slice(0, 20)}...`, {
+                position: 'bottom-left'
+            })
         },
         ClearCards: (state, action) => {
             state.cardItems = [];
             localStorage.setItem('CartSlice', JSON.stringify(state.cardItems))
-            toast.success(`Clear items`, {
+            toast.error(`Clear Products`, {
                 position: 'bottom-left'
             })
         },
         gettotal: (state, action) => {
             const { total, quantity } = state.cardItems.reduce(
                 (cardTotal, cardItem) => {
-                    const { price, cardQuantity } = cardItem; 
+                    const { price, cardQuantity } = cardItem;
                     const itemTotal = price * cardQuantity;
-
                     cardTotal.total += itemTotal;
                     cardTotal.quantity += cardQuantity;
-
                     return cardTotal;
                 },
                 {
@@ -72,7 +74,6 @@ const CartSlice = createSlice({
                     quantity: 0,
                 }
             );
-
             state.CartTotal = total;
             state.cartquantity = quantity;
         }

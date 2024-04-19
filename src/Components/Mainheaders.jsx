@@ -27,11 +27,11 @@ const Mainheaders = () => {
             <Swiper
                 loop={true}
                 centeredSlides={true}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
-                navigation={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                // navigation={true}
                 modules={[Pagination, Navigation , Autoplay]}
                 className="mySwiper"
             >

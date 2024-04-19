@@ -1,0 +1,50 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+.About{
+    padding-top: 100px;
+}
+.About .bg-img {
+    background-image: url(https://themewagon.github.io/ultras/images/hero-image.jpg);
+    background-position: 50% , 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.About h3{
+    font-size: 160px;
+}
+
+.About .links{
+    height: 70vh;
+}
+
+.content-About{
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.content-About .desc-about .flex-column h4{
+    font-size: 60px;
+}
+.content-About .desc-about .flex-column .brg{
+    font-size: 22px;
+    width: 90%;
+    line-height: 40px;
+}
+.content-About .desc-about .flex-column .btn-Shop {
+    background-color: #000 !important;
+    color: #fff;
+    width: 50%;
+}

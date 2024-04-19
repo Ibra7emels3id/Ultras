@@ -24,17 +24,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 1066px;
-    /* display: flex;
-    align-items: center; */
-    /* justify-content: center; */
-
 }
 
 .img2 {
     background-image: url(/images/banner2.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 1066px;
 }
 

@@ -12,6 +12,9 @@
     padding: 100px 0;
     background-color: var(--light-grey-color);
 }
+.brand-collection .collection img{
+    
+}
 
 @media (max-width: 500px) {
     .brand-collection .collection{

@@ -14,8 +14,8 @@ import './css/BrandCollection.css'
 const BrandCollection = () => {
     return (
         <>
-            <div className="brand-collection">
-                <div className="collection d-flex flex-wrap align-items-center justify-content-center gap-5">
+            <div className="brand-collection px-5">
+                <div className="collection d-flex flex-wrap align-items-center justify-content-between justify-content-center gap-5">
                     <img className='' src={brand1} alt="" />
                     <img className='' src={brand2} alt="" />
                     <img className='' src={brand3} alt="" />

@@ -5,7 +5,7 @@
             "title": "Half Sleeve T-Shirt",
             "price": 109,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
+            "category": "Tshirts",
             "image": "/images/selling-products1.jpg",
             "rating": {
                 "rate": 3.9,
@@ -17,7 +17,7 @@
             "title": "Volunteer Half blue",
             "price": 35.00,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/selling-products2.jpg",
             "rating": {
                 "rate": 4.1,
@@ -29,7 +29,7 @@
             "title": "Grunge Hoodie",
             "price": 30.00,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
+            "category": "Pants",
             "image": "/images/selling-products3.jpg",
             "rating": {
                 "rate": 3.9,
@@ -41,7 +41,7 @@
             "title": "Full Sleeve Jeans Jacket",
             "price": 45.00,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Jackets",
             "image": "/images/selling-products12.jpg",
             "rating": {
                 "rate": 4.1,
@@ -53,7 +53,7 @@
             "title": "Full sleeve cover shirt",
             "price": 109,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
+            "category": "Tshirts",
             "image": "/images/selling-products4.jpg",
             "rating": {
                 "rate": 3.9,
@@ -65,7 +65,7 @@
             "title": "Grey Check Coat",
             "price": 786,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/selling-products5.jpg",
             "rating": {
                 "rate": 4.1,
@@ -77,7 +77,7 @@
             "title": "Long Sleeve T-Shirt",
             "price": 199.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Tshirts",
             "image": "/images/selling-products6.jpg",
             "rating": {
                 "rate": 4.1,
@@ -89,7 +89,7 @@
             "title": "Half Sleeve T-Shirt",
             "price": 99.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Tshirts",
             "image": "/images/selling-products7.jpg",
             "rating": {
                 "rate": 4.1,
@@ -101,7 +101,7 @@
             "title": "Orange White Nike",
             "price": 55.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Shoes",
             "image": "/images/selling-products8.jpg",
             "rating": {
                 "rate": 4.1,
@@ -113,7 +113,7 @@
             "title": "Running Shoe",
             "price": 155.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/selling-products9.jpg",
             "rating": {
                 "rate": 4.1,
@@ -125,7 +125,7 @@
             "title": "Tennis Shoe",
             "price": 89.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/selling-products10.jpg",
             "rating": {
                 "rate": 4.1,
@@ -134,10 +134,10 @@
         },
         {
             "id": "12",
-            "title": "Nike Brand Shoe",
+            "title": "Shoes",
             "price": 99.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Shoes",
             "image": "/images/selling-products12.jpg",
             "rating": {
                 "rate": 4.1,
@@ -149,7 +149,7 @@
             "title": "Orange White Nike",
             "price": 199.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Shoes",
             "image": "/images/selling-products13.jpg",
             "rating": {
                 "rate": 4.1,
@@ -158,11 +158,11 @@
         },
         {
             "id": "14",
-            "title": "Running Shoe",
-            "price": 90.99,
+            "title": "Stylish Women Bag",
+            "price": 135.00,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
-            "image": "/images/selling-products14.jpg",
+            "category": "Accessories",
+            "image": "/images/selling-products20.jpg",
             "rating": {
                 "rate": 4.1,
                 "count": 259
@@ -170,11 +170,11 @@
         },
         {
             "id": "15",
-            "title": "Tennis Shoe",
-            "price": 89.99,
+            "title": "Stylish Gadgets",
+            "price": 60.00,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
-            "image": "/images/selling-products15.jpg",
+            "category": "Accessories",
+            "image": "/images/selling-products19.jpg",
             "rating": {
                 "rate": 4.1,
                 "count": 259
@@ -182,10 +182,34 @@
         },
         {
             "id": "16",
+            "title": "Running Shoe",
+            "price": 90.99,
+            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            "category": "Shoes",
+            "image": "/images/selling-products14.jpg",
+            "rating": {
+                "rate": 4.1,
+                "count": 259
+            }
+        },
+        {
+            "id": "17",
+            "title": "Tennis Shoe",
+            "price": 89.99,
+            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            "category": "Shoes",
+            "image": "/images/selling-products15.jpg",
+            "rating": {
+                "rate": 4.1,
+                "count": 259
+            }
+        },
+        {
+            "id": "18",
             "title": "Nike Brand Shoe",
             "price": 199.99,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Shoes",
             "image": "/images/selling-products16.jpg",
             "rating": {
                 "rate": 4.1,
@@ -199,7 +223,7 @@
             "title": "Full sleeve cover shirt",
             "price": 109,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/product-item1.jpg",
             "rating": {
                 "rate": 3.9,
@@ -211,7 +235,7 @@
             "title": "Volunteer Half blue",
             "price": 786,
             "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/product-item2.jpg",
             "rating": {
                 "rate": 4.1,
@@ -223,7 +247,7 @@
             "title": "Double yellow shirt",
             "price": 565,
             "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-            "category": "men's clothing",
+            "category": "Outer",
             "image": "/images/product-item3.jpg",
             "rating": {
                 "rate": 4.7,

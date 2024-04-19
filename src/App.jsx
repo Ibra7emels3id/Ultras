@@ -39,12 +39,11 @@ import { app } from './firebase/FIrebase';
 function App() {
     const [Products , setProducts] = useState([]);
 
-    console.log(Products.length);
 
     const auth = getAuth();
     const [user, loading] = useAuthState(auth)
 
-    console.log(user);
+    // console.log(user);
     useEffect(()=>{
         axios.get('http://localhost:3000/Featured')
         .then(function(response){
