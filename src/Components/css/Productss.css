@@ -14,8 +14,7 @@
 }
 
 .Products .group{
-    flex-wrap: wrap;
-    justify-content: center !important;
+    overflow: auto !important;
 }
 .Products .group button{
     margin: auto !important;

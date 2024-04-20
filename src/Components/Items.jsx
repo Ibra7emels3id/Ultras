@@ -71,13 +71,13 @@ const Items = () => {
     return (
         <>
             <ToggleButtonGroup
-            className='px-5'
+            className=''
                 color="primary"
                 value={alignment}
                 exclusive
                 onChange={handleChange}
                 aria-label="Platform"
-                sx={{ margin: '50px auto', flexWrap: 'wrap', padding: '0', width: '100%', display: 'flex' }}
+                sx={{ margin: '50px auto',overflow: 'auto', padding: '0', width: '100%', display: 'flex' }}
             >
                 <ToggleButton sx={{ border: 'none', width: '115px', margin: '0', textAlign: 'center' }} value="All">All</ToggleButton>
                 <ToggleButton sx={{ border: 'none', width: '115px', margin: '0', textAlign: 'center' }} value="Shoes">Shoes</ToggleButton>
