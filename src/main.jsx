@@ -10,19 +10,23 @@ import {
 } from "react-router-dom"
 
 // import Pages
-import Shop from './Pages/Shop.jsx'
 import About from './Pages/About.jsx'
 import Cards from './Pages/Ceackout.jsx'
 import Registration from './Pages/Registration.jsx'
+import Login from './Pages/Login.jsx'
+import Account from './Pages/Account.jsx'
+import Error404 from './Pages/Error404.jsx'
+import Shop from './Pages/Shop.jsx'
+import Card from './Pages/Card.jsx'
+import Blog from './Pages/Blog.jsx'
+import Contact from './Pages/Contact.jsx'
 
 
 // import store
 import {store} from './app/store.jsx'
 import { Provider } from 'react-redux';
-import Login from './Pages/Login.jsx'
-import Acount from './Pages/Account.jsx'
-import Account from './Pages/Account.jsx'
-import Error404 from './Pages/Error404.jsx'
+
+
 
 
 
@@ -34,7 +38,7 @@ const router = createBrowserRouter([
         errorElement: <Error404 />
     },
     {
-        path: "/Shop",
+        path: "/shop",
         element: <Shop />,
     },
     {
@@ -56,6 +60,18 @@ const router = createBrowserRouter([
     {
         path: "/Account",
         element: <Account />,
+    },
+    {
+        path: "Card/:DetailsId",
+        element: <Card />,
+    },
+    {
+        path: "blog",
+        element: <Blog />,
+    },
+    {
+        path: "contact",
+        element: <Contact />,
     },
 ]);
 

@@ -134,19 +134,19 @@ const Header = () => {
                                         Shop
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><Link className="dropdown-item" to="/Shop">Shop</Link></li>
+                                        <li><Link className="dropdown-item" to="/shop">Shop</Link></li>
                                         <li><a className="dropdown-item" href="#">Another action</a></li>
                                         <li><a className="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item mx-3">
+                                {/* <li className="nav-item mx-3">
                                     <a className=" fs-5 text-black nav-link " role="button" aria-disabled="true">Pages</a>
+                                </li> */}
+                                <li className="nav-item mx-3">
+                                    <Link to='/blog' className=" fs-5 text-black nav-link " role="button" aria-disabled="true">Plog</Link>
                                 </li>
                                 <li className="nav-item mx-3">
-                                    <a className=" fs-5 text-black nav-link " role="button" aria-disabled="true">Plog</a>
-                                </li>
-                                <li className="nav-item mx-3">
-                                    <a className=" fs-5 text-black nav-link " role="button" aria-disabled="true">Contact</a>
+                                    <Link to='/contact' className=" fs-5 text-black nav-link " role="button" aria-disabled="true">Contact</Link>
                                 </li>
                                 <li className="nav-item mx-3">
                                     <Link to='/Cards' className=" fs-5 text-black nav-link  Gred" role="button" aria-disabled="true">

@@ -7,8 +7,8 @@
     --primary-color: #6995B1;
     --light-primary-color: #eef1f3;
 }
-
 .card .text-box h5{
+    min-height: 50px;
     cursor: pointer;
 }
 .card .text-box h5:hover{

@@ -24,14 +24,12 @@ import Footer from './Components/Footer';
 // import React tost
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+// import Redux toltolkit
 import { useDispatch, useSelector } from 'react-redux';
 import { gettotal } from './features/CartSlice';
 
-
+// import firebase Data Base
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged } from 'firebase/auth';
-
-
-
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { app } from './firebase/FIrebase';
 
@@ -39,11 +37,6 @@ import { app } from './firebase/FIrebase';
 function App() {
     const [Products , setProducts] = useState([]);
 
-
-    const auth = getAuth();
-    const [user, loading] = useAuthState(auth)
-
-    // console.log(user);
     useEffect(()=>{
         axios.get('http://localhost:3000/Featured')
         .then(function(response){
@@ -51,13 +44,9 @@ function App() {
         })
     },[])
 
-    
-    
-
     return (
         <>
             <Header />
-            {/* {user ? <h1>{user.email}</h1> || console.log(user.displayName) : null} */}
             <ToastContainer/>
             <ContextProduct.Provider value={{setProducts , Products}}>
                 <Mainheaders />

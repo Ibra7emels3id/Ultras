@@ -17,3 +17,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media (max-width: 700px) {
+    .css-kncgbn-MuiToggleButtonGroup-root{
+        justify-content: center !important;
+    }
+}
+
+.select form input{
+    outline: none;
+    height: 50px;
+}
+.select form button{
+    outline: none;
+    height: 50px;   
+    width: 140px;
+    border-radius: none !important;
+    border: none;
+    background-color: #9c27b0;
+    color: var(--light-color);
+}

@@ -1,0 +1,46 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+.Detales-Card img{
+    height: 600px;
+    object-fit: cover;
+}
+
+.Detales-Card .colors span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+}
+.Detales-Card .colors span:first-child{
+    background-color: #f82828;
+}
+.Detales-Card .colors span:nth-child(2){
+    background-color: #000000;
+}
+.Detales-Card .colors span:nth-child(3){
+    background-color: #d1bcbc;
+}
+.Detales-Card .detals-text .fw-bold{
+    font-size: 65px !important;
+    color: #9c27b0;
+}
+.Detales-Card .detals-text .brg-text{
+    width: 100% !important;
+}
+.Detales-Card .detals-text .btn-Add-to-card{
+    font-size: 30px;
+    background-color: var(--primary-color);
+    width: 250px;
+    text-align: center;
+    padding: 10px 20px !important;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--light-color);
+}

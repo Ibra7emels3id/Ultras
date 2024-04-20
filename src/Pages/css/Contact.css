@@ -1,0 +1,16 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+.form-contact form textarea,
+.form-contact form input{
+    outline: none;
+    border: 1px solid #777;
+    padding: 10px;
+    color: var(--dark-color);
+}
