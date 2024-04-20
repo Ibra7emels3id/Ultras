@@ -59,7 +59,7 @@
     }
 
     .css-nen11g-MuiStack-root {
-        margin: auto;
+        margin: auto !important;
     }
 
     .nav-item button {
