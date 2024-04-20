@@ -17,6 +17,9 @@
     flex-wrap: wrap;
     justify-content: center !important;
 }
+.Products .group button{
+    margin: auto !important;
+}
 
 @media (max-width: 700px) {
     .css-kncgbn-MuiToggleButtonGroup-root{
