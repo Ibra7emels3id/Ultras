@@ -122,14 +122,14 @@ const Header = () => {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                                 <li className="nav-item mx-3">
                                     <Link className=" fs-5 text-black nav-link active" to='/'>Home</Link>
                                 </li>
                                 <li className="nav-item mx-3">
                                     <Link className=" fs-5 text-black nav-link" to="/About">About</Link>
                                 </li>
-                                <li className="nav-item mx-3 dropdown">
+                                <li className="nav-item mx-3 dropdown position-relative">
                                     <a className=" fs-5 text-black nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Shop
                                     </a>
@@ -167,9 +167,9 @@ const Header = () => {
                                             <Avatar alt="Remy Sharp" src={imguser} />
                                         </StyledBadge>
                                         {/* <Avatar alt="Remy Sharp" src={imguser} /> */}
-                                    </Stack> : <li className="nav-item">
-                                        <Link to='/Login' className=" fs-5 text-black nav-link  Gred " role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
-                                    </li>}
+                                    </Stack> :
+                                        <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
+                                        }
                                 </li>
                                 <li className="nav-item mx-3 d-flex align-items-center">
                                     {user ? <button onClick={() => {

@@ -1,25 +1,30 @@
-:root{
-    --Color-Gred: #656565 ;
+:root {
+    --Color-Gred: #656565;
 }
-.NavBarHd{
+
+.NavBarHd {
     z-index: 100 !important;
-   margin: auto;
-   width: 100%;
-   /* flex-direction: column; */
+    margin: auto;
+    width: 100%;
+    /* flex-direction: column; */
 }
-.navbar{
+
+.navbar {
     width: 100% !important;
     margin: auto;
     padding: 10px 20px;
     z-index: 10;
     /* position: relative; */
 }
-.Gred{
+
+.Gred {
     color: var(--Color-Gred) !important;
 }
-.scrollbg{
+
+.scrollbg {
     background-color: #ffffff !important;
 }
+
 /* .MuiAvatar-root{
     height: 30px !important;
     width: 30px !important;
@@ -30,8 +35,48 @@
     top: 50% !important;
     transform: translateY(-50%) !important;
 } */
-.MuiStack-root{
+.MuiStack-root {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #fff;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .navbar-nav {
+        gap: 20px;
+        padding: 40px 0;
+
+    }
+
+    .navbar-nav li {
+        width: 100%;
+    }
+
+    .css-nen11g-MuiStack-root {
+        margin: auto;
+    }
+
+    .nav-item button {
+        margin: auto;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90%;
+        text-align: center;
+        background-color: #777;
+        color: #fff !important;
+        transition: 1s ease;
+    }
+    .dropdown-menu a{
+        color: #9c27b0;
+    }
 }
