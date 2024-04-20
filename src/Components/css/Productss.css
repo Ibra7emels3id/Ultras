@@ -15,7 +15,7 @@
 
 .Products .group{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 @media (max-width: 700px) {
