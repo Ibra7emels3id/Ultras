@@ -158,17 +158,17 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item mx-3 d-flex align-items-center  justify-content-enter">
-                                    {user ? <Stack>
-                                        <StyledBadge
-                                            overlap="circular"
-                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                                            variant="dot"
-                                        >
-                                            <Avatar alt="Remy Sharp" src={imguser} />
-                                        </StyledBadge>
-                                    </Stack> :
-                                        <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
-                                        }
+                                    {user ? <Stack className='m-auto'>
+                                                <StyledBadge
+                                                    overlap="circular"
+                                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                                    variant="dot"
+                                                >
+                                                    <Avatar alt="Remy Sharp" src={imguser} />
+                                                </StyledBadge>
+                                            </Stack> :
+                                            <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
+                                    }
                                 </li>
                                 <li className="nav-item mx-3 d-flex align-items-center">
                                     {user ? <button onClick={() => {
