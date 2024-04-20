@@ -157,7 +157,7 @@ const Header = () => {
                                         </IconButton>
                                     </Link>
                                 </li>
-                                <li className="nav-item mx-3 d-flex align-items-center">
+                                <li className="nav-item mx-3 d-flex align-items-center  justify-content-enter">
                                     {user ? <Stack>
                                         <StyledBadge
                                             overlap="circular"
@@ -166,7 +166,6 @@ const Header = () => {
                                         >
                                             <Avatar alt="Remy Sharp" src={imguser} />
                                         </StyledBadge>
-                                        {/* <Avatar alt="Remy Sharp" src={imguser} /> */}
                                     </Stack> :
                                         <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
                                         }
