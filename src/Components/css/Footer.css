@@ -26,4 +26,14 @@
     .footer-Forever .icons{
         margin: 50px auto;
     }
+    .main-footer{
+        width: 100% !important;
+        padding: 20px 0 !important;
+        text-align: center;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .main-footer h5{
+        font-size: 14px !important;
+    }
 }
