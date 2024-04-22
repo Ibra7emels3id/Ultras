@@ -20,7 +20,7 @@ const Card = () => {
                 // console.log(Data);
                 setProducts(Data)
             })
-    },[]);
+    },[DetailsId]);
 
     const dispatch = useDispatch()
 
@@ -28,16 +28,16 @@ console.log(DetailsId);
 return (
     <>
         <Header />
-        <div className="Detales-Card pt-5">
-            <div style={{height: '100vh'}} className="row w-100 m-auto">
+        <div className="Detales-Card pt-0">
+            <div style={{height: '90vh'}} className="row w-100 m-auto">
                 <div className="col-lg-6">
-                    <div className="pt-5">
+                    <div className="pt-0">
                         <img className='w-100 ' src={Products.image} alt="" />
                     </div>
                 </div>
                 <div className="col-lg-6 detals-text ">
-                    <div className="p-5 d-flex flex-column justify-content-center h-100 gap-2">
-                        <h3 className='fs-1 fw-bold'>{Products.title}</h3>
+                    <div className="px-5 d-flex flex-column justify-content-center gap-2">
+                        <h3 className='fs-5 fw-bold'>{Products.title}</h3>
                         <p className='brg brg-text fs-4'>{Products.description}</p>
                         <div className="colors d-flex gap-5">
                             <span className='Black'></span>

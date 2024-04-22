@@ -31,7 +31,6 @@ const Mainheaders = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                navigation={true}
                 simulateTouch={false}
                 modules={[Pagination, Navigation , Autoplay]}
                 className="mySwiperr"
