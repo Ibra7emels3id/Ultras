@@ -48,3 +48,57 @@
     color: #fff;
     width: 50%;
 }
+@media (max-width: 1200px) {
+    .content-About .desc-about .flex-column .brg{
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+    }
+    .content-About .desc-about .flex-column h4 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .content-About .desc-about .flex-column .btn-Shop {
+        width: 65%;
+    }
+}
+@media (max-width: 992px) {
+    .About h3 {
+        font-size: 100px;
+    }
+    .content-About .desc-about .flex-column .brg{
+        font-size: 24px;
+        width: 100%;
+        line-height: 33px;
+        margin: 20px 0;
+    }
+    .content-About .desc-about .flex-column h4 {
+        font-size: 50px;
+        padding: 0px 0;
+        margin: 0;
+    }
+    .content-About .desc-about .flex-column .btn-Shop {
+        width: 65%;
+        margin: auto;
+    }
+}
+@media (max-width: 500px) {
+    .About h3 {
+        font-size: 60px;
+    }
+    .content-About .desc-about .flex-column .brg {
+        font-size: 19px;
+        width: 100%;
+        line-height: 28px;
+        margin: 20px 0;
+    }
+    .content-About .desc-about .flex-column h4 {
+        font-size: 30px;
+        padding: 2px 0;
+        margin: 0;
+    }
+    .content-About .desc-about .flex-column .btn-Shop {
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -34,18 +34,18 @@ const About = () => {
                         <Link to='/' className='btn fs-5'>Home</Link>/ <span className='fs-5'> About</span>
                     </div>
                 </div>
-                <div className="content-About w-100">
+                <div className="content-About w-100 m-auto">
                     <Services />
-                    <div className="desc-about row w-100  ">
-                        <div className="col-lg-6 m-auto">
+                    <div className="desc-about row w-100 m-auto ">
+                        <div className="col-lg-6 col-xl-6 m-auto">
                             <div className="imges">
                                 <img className='w-100' src={Aboutimg} alt="" />
                             </div>
                         </div>
-                        <div className="col-ls-6 w-50 d-flex align-items-center">
+                        <div className="col-lg-6 col-xl-6 d-flex align-items-center">
                             <div className="d-flex flex-column text-black ">
                                 <h4 className='fw-bold'>How Was Ultras Store Started?</h4>
-                                <p className='p-0 m-0 brg pt-4 mb-5'>Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at.
+                                <p className='p-0 m-0 brg pt-3 mb-3'>Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at.
                                     Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus congue velit et.</p>
                                 <Link className='btn btn-Shop ' to='/'>Shop our Store <ArrowForwardIcon className='Icon' /></Link>
                             </div>
