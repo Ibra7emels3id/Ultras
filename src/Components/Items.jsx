@@ -42,8 +42,6 @@ const Items = () => {
         CountPrice.max = ''
     }
 
-    console.log(flterPrice);
-
     let AllProductsCatgory = Products
 
     if (alignment !== 'All') {

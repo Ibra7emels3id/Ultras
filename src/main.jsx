@@ -25,6 +25,12 @@ import Contact from './Pages/Contact.jsx'
 // import store
 import {store} from './app/store.jsx'
 import { Provider } from 'react-redux';
+import Admin from '../Admin/admin.jsx'
+import Dashbord from '../Admin/Dashbord.jsx'
+import AddProduct from '../Admin/AddProduct.jsx'
+import Update from '../Admin/Update.jsx'
+import Detalsproduct from '../Admin/Detalsproduct.jsx'
+
 
 
 
@@ -72,6 +78,27 @@ const router = createBrowserRouter([
     {
         path: "contact",
         element: <Contact />,
+    },
+    // Control Admin 
+    {
+        path: "admin",
+        element: <Admin />,
+    },
+    {
+        path: "dashbord",
+        element: <Dashbord />,
+    },
+    {
+        path: "addProduct",
+        element: <AddProduct />,
+    },
+    {
+        path: "update/:UpdateId",
+        element: <Update/>,
+    },
+    {
+        path: "detals/:DetailsId",
+        element: <Detalsproduct/>,
     },
 ]);
 

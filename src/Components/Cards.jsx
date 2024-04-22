@@ -31,8 +31,8 @@ const Cards = ({ title, id, price, imgs }) => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-xs-12">
                 <div className="card  p-2 position-relative">
                     <div className="imge border rounded p-2 bg-white">
-                        <img style={{height: '230px'}} className='w-100 rounded' src={imgs} alt="" />
-                        {/* <img className='w-100 rounded' src={imgs} alt="" /> */}
+                        {/* <img style={{height: '230px'}} className='w-100 rounded' src={imgs} alt="" /> */}
+                        <img className='w-100 rounded' src={imgs} alt="" />
                     </div>
                     <div className="text-box d-flex flex-column">
                         <h5 className='pt-3 px-3 fw-bold fs-4'>{title.slice(0, 20)}...</h5>

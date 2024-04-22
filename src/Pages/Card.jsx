@@ -8,7 +8,6 @@ import './css/Card.css'
 // import Icons
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import migs1 from '../../images/selling-products15.jpg'
 import { addtoCard } from '../features/CartSlice';
 import { useDispatch } from 'react-redux';
 const Card = () => {
@@ -16,7 +15,6 @@ const Card = () => {
     const { DetailsId } = useParams()
     useEffect(() => {
         fetch(`http://localhost:3000/Products/${DetailsId}`)
-            // const data = await fetch('https://fakestoreapi.com/products')
             .then((Res) => Res.json())
             .then((Data)=>{
                 // console.log(Data);
