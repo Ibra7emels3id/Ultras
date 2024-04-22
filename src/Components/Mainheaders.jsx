@@ -31,9 +31,10 @@ const Mainheaders = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                // navigation={true}
+                navigation={true}
+                simulateTouch={false}
                 modules={[Pagination, Navigation , Autoplay]}
-                className="mySwiper"
+                className="mySwiperr"
             >
                 <SwiperSlide className='img1 d-flex align-items-center'>
                     <div className="text-Bg container">

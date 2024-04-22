@@ -21,3 +21,16 @@
     color: var(--primary-color);
     cursor: pointer;
 }
+
+@media (max-width: 992px) {
+    .context .tellConect{
+        display: none;
+    }
+    .context .Free-shipping{
+        display: none;
+    }
+    .context .search{
+        width: 100%;
+        margin: 0 45px 0 0 !important;
+    }
+}

@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 1066px;
-    
+    opacity: 1 !important;
 }
 
 .img2 {
@@ -33,6 +33,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 1066px;
+    opacity: 1 !important;
 }
 
 .head-Title {
