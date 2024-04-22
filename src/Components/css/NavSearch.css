@@ -1,0 +1,23 @@
+:root {
+    --accent-color: #8d8d8d;
+    --dark-color: #191919;
+    --light-color: #fff;
+    --grey-color: #dbdbdb;
+    --light-grey-color: #fafafa;
+    --primary-color: #6995B1;
+    --light-primary-color: #eef1f3;
+}
+
+.context .search input{
+    height: 40px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    padding: 0 10px;
+    border-radius: 30px;
+    outline: none;
+    color: var(--primary-color);
+}
+.context .search .icon{
+    color: var(--primary-color);
+    cursor: pointer;
+}

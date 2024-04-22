@@ -21,6 +21,7 @@ import { getAuth, signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import NavSearch from './NavSearch';
 
 
 // style Icons Shop
@@ -69,6 +70,7 @@ const Header = () => {
     const auth = getAuth();
     const [user, loading] = useAuthState(auth)
     const [Headerscroll, setHeaderscroll] = useState('')
+    const [search, setsearch] = useState('')
 
     const { cartquantity } = useSelector((state) => state.cart)
 
@@ -93,8 +95,10 @@ const Header = () => {
         if (scrollY > 100) {
             // console.log('text');
             setHeaderscroll('scrollbg')
+            setsearch('d-none')
         } else {
             setHeaderscroll('')
+            setsearch('d-flex align-items-center justufy-content-between')
         }
     }
 
@@ -112,10 +116,16 @@ const Header = () => {
         });
     }
 
+
+
     return (
         <>
+
             <div className="NavBarHd position-relative">
-                <nav className={`navbar navbar-expand-lg position-fixed w-100 ${Headerscroll}`}>
+                <nav className={`navbar bg-white navbar-expand-lg  flex-column w-100 ${Headerscroll}`}>
+                    <div className={`border-bottom NavSearch w-100 m-auto ${search}`}>
+                        <NavSearch />
+                    </div>
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#"><img className='w-100' src={iconLogo} alt="" /></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,15 +169,15 @@ const Header = () => {
                                 </li>
                                 <li className="nav-item mx-3 d-flex align-items-center  justify-content-enter">
                                     {user ? <Stack className='m-auto'>
-                                                <StyledBadge
-                                                    overlap="circular"
-                                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                                                    variant="dot"
-                                                >
-                                                    <Avatar alt="Remy Sharp" src={imguser} />
-                                                </StyledBadge>
-                                            </Stack> :
-                                            <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
+                                        <StyledBadge
+                                            overlap="circular"
+                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                            variant="dot"
+                                        >
+                                            <Avatar alt="Remy Sharp" src={imguser} />
+                                        </StyledBadge>
+                                    </Stack> :
+                                        <Link to='/Login' className=" fs-5 text-black nav-link  Gred m-auto" role="button" aria-disabled="true"><PersonIcon className='fs-2' /></Link>
                                     }
                                 </li>
                                 <li className="nav-item mx-3 d-flex align-items-center">

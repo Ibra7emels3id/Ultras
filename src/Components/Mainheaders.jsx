@@ -35,7 +35,7 @@ const Mainheaders = () => {
                 modules={[Pagination, Navigation , Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide className='img1 d-flex align-items-center '>
+                <SwiperSlide className='img1 d-flex align-items-center'>
                     <div className="text-Bg container">
                         <h2 className='head-Title text-black'>Casual<br /> Collection</h2>
                         <p className='brg w-50 fs-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
