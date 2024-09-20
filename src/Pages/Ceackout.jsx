@@ -64,7 +64,6 @@ const Ceackout = () => {
     const card = useSelector((state) =>
         state.cart
     )
-    // console.log(card);
 
     const dispatch = useDispatch()
 
@@ -81,7 +80,7 @@ const Ceackout = () => {
                 {CardProduct.length === 0 ? <div className="durectShop text-center">
                     <h4 className='fs-2 fw-bold'>Shopping Cart</h4>
                     <p className='fs-1 p-4'>your is currentiy empty</p>
-                    <Link to='/Products' className='btn fs-4'><ArrowBackIcon className='fs-3' /> start Shopping</Link>
+                    <Link to='/shop' className='btn fs-4  bg-danger text-white'><ArrowBackIcon className='fs-3' /> start Shopping</Link>
                 </div> : <div className="Cart-itmes">
                     <h4 className='fs-1 fw-bold text-center'>Shopping Cart</h4>
                     <TableContainer sx={{ width: '90%', margin: 'auto' }} className='mt-5 mb-5' component={Paper}>

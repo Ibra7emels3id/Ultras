@@ -35,20 +35,22 @@ import { app } from './firebase/FIrebase';
 
 
 function App() {
-    const [Products , setProducts] = useState([]);
-
-    useEffect(()=>{
+    const auth = getAuth();
+    const [user, loading] = useAuthState(auth)
+    // console.log(user);
+    const [Products, setProducts] = useState([]);
+    useEffect(() => {
         axios.get('http://localhost:3000/Featured')
-        .then(function(response){
-            setProducts(response.data) 
-        })
-    },[])
+            .then(function (response) {
+                setProducts(response.data)
+            })
+    }, [])
 
     return (
         <>
             <Header />
-            <ToastContainer/>
-            <ContextProduct.Provider value={{setProducts , Products}}>
+            <ToastContainer />
+            <ContextProduct.Provider value={{ setProducts, Products, loading, user }}>
                 <Mainheaders />
                 <Featuredproducts />
                 <Offersimg />
@@ -56,15 +58,15 @@ function App() {
                 <Productss />
                 <Description />
                 <Flashsales />
-                <Shoppifybanner/>
+                <Shoppifybanner />
                 <Quote />
                 <Articles />
-                <BrandCollection/>
+                <BrandCollection />
                 <Ourteam />
                 <Services />
                 <Footer />
             </ContextProduct.Provider>
-            
+
         </>
     )
 }

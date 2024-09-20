@@ -1,3 +1,4 @@
+import NavSearch from './NavSearch';
 import React, { useEffect, useState } from 'react';
 import iconLogo from '../../images/main-logo.png'
 import { Link, useNavigate } from 'react-router-dom'
@@ -21,7 +22,6 @@ import { getAuth, signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import NavSearch from './NavSearch';
 
 
 // style Icons Shop

@@ -19,12 +19,8 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
 const Cards = ({ title, id, price, imgs }) => {
-
-
     const dispatch = useDispatch()
     
-
-
 
     return (
         <>

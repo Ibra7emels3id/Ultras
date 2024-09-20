@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 // import css
@@ -11,14 +11,13 @@ import SearchIcon from '@mui/icons-material/Search';
 const NavSearch = () => {
     const [DataSearch, setDataSearch] = useState('')
     const [Products, setProducts] = useState([])
-    const naveget = useNavigate()
+    // const naveget = useNavigate()
 
 
 
     const getDataSEarch = async () => {
         const Res = await fetch('http://localhost:3000/Products')
         const Data = await Res.json()
-        // console.log(Data);
         setProducts(Data)
     }
 

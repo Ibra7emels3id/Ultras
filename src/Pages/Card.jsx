@@ -24,7 +24,6 @@ const Card = () => {
 
     const dispatch = useDispatch()
 
-console.log(DetailsId);
 return (
     <>
         <Header />

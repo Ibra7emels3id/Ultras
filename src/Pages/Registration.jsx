@@ -3,15 +3,9 @@ import React, { useState } from 'react';
 // import Bootstrap
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
-import Header from '../Components/Header';
-
-
-// import icons
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GoogleIcon from '@mui/icons-material/Google';
 
 // import Firebase 
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithPopup, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, updateProfile } from 'firebase/auth';
 import { GoogleAuthProvider } from "firebase/auth";
 
 
@@ -72,102 +66,69 @@ const registration = () => {
         'login_hint': 'user@example.com'
     });
 
-    const handleSigninGoogle = () => {
-        const auth = getAuth();
-        signInWithPopup(auth, provider)
-            .then((result) => {
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;                const user = result.user;
-                console.log(user);
-            }).catch((error) => {
-                console.log(error);
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                const email = error.customData.email;
-                const credential = GoogleAuthProvider.credentialFromError(error);
-                // ...
-            });
-    }
-
-
-
-
 
     return (
         <>
-            <Header />
-
-            <div className="container form-login">
-                <div className="title-form text-center">
-                    <h3 className='fs-1 fw-bold'>Registration</h3>
+            <div className="from mt-5">
+                <div className="logo text-center">
+                    <h1>Welcome Ultras</h1>
                 </div>
-                <button onClick={() => {
-                    handleSigninGoogle()
-                }} className='btn fs-1'><FacebookIcon className='fs-1' /></button>
-                <button onClick={() => {
-                    handleSigninGoogle()
-                }} className='btn fs-1'><GoogleIcon className='fs-1' /></button>
-                <form >
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputEmail1" className="form-label">
-                            Name
+                <form className='mt-5' onSubmit={handelSendData}>
+                    {/* 2 column grid layout with text inputs for the first and last names */}
+                    <div className="form-outline mb-4">
+                        <label className="form-label" htmlFor="name">
+                            Enter Your Name
                         </label>
-                        <input onChange={(e) => {
+                        <input type="text" onChange={(e) => {
                             setformdata({ ...formdata, name: e.target.value })
-                        }}
-                            value={formdata.name}
-                            type="text"
-                            className="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                        />
+                        }} placeholder='Enter Your Name' id="name" className="form-control" />
                     </div>
-                    <div className="mb-3 mt-5">
-                        <label htmlFor="exampleInputEmail1" className="form-label">
-                            Email address
+                    {/* Email input */}
+                    <div data-mdb-input-init="" className="form-outline mb-4">
+                        <label className="form-label" htmlFor="form3Example3">
+                            Enter Your Email address
                         </label>
-                        <input onChange={(e) => {
+                        <input type="email" onChange={(e) => {
                             setformdata({ ...formdata, Email: e.target.value })
-                        }}
-                            value={formdata.Email}
-                            type="email"
-                            className="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                        />
+                        }} placeholder='Enter Your Email' id="form3Example3" className="form-control" />
                     </div>
-                    <div className="mb-3 mt-5">
-                        <label htmlFor="exampleInputPassword1" className="form-label">
-                            Password
+                    {/* Password input */}
+                    <div data-mdb-input-init="" className="form-outline mb-4">
+                        <label className="form-label" htmlFor="form3Example4">
+                            Enter Your Password
                         </label>
-                        <input onChange={(e) => {
+                        <input type="password" onChange={(e) => {
                             setformdata({ ...formdata, Password: e.target.value })
-                        }}
-                            value={formdata.Password}
-                            type="password"
-                            className="form-control"
-                            id="exampleInputPassword1"
-                        />
+                        }} placeholder='Enter Your Password' id="form3Example4" className="form-control" />
                     </div>
-                    <div className="mb-3 form-check ">
-                        {/* <input type="checkbox" className="form-check-input" id="exampleCheck1" /> */}
-                        <label className="form-check-label" htmlFor="exampleCheck1">
-                            Check me out
+                    {/* Checkbox */}
+                    <div className="form-check d-flex justify-content-center align-items-center mb-4">
+                        <input
+                            className="form-check-input me-2"
+                            type="checkbox"
+                            defaultValue=""
+                            id="form2Example33"
+                            defaultChecked=""
+                        />
+                        <label className="form-check-label" htmlFor="form2Example33">
+                            Subscribe to our newsletter
                         </label>
                     </div>
-                    <div className="submit text-center">
-                        <button onClick={(e) => {
-                            handelSendData(e)
-                        }} type="submit" className="btn btn-primary  w-100 m-auto text-center mt-5">
-                            Submit
-                        </button>
-                    </div>
-                    <div className="submit text-center">
-                        <Link to='/Login' type="submit" className="btn btn-primary  m-auto text-center mt-5">
-                            Login
-                        </Link>
-                    </div>
+                    {/* Submit button */}
+                    <button
+                        type="submit"
+                        data-mdb-ripple-init=""
+                        className="btn btn-primary btn-block mb-4"
+                    >
+                        Sign up
+                    </button>
                 </form>
+                <div className="text-center">
+                    <div className="login ">
+                        <p>Already have an account?</p>
+                        <Link to='/login'>Login</Link>
+                    </div>
+                </div>
             </div>
         </>
     );
