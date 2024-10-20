@@ -87,13 +87,13 @@ const Items = () => {
                 <ToggleButton sx={{ border: 'none', width: '115px', margin: '0', textAlign: 'center' }} value="Accessories">Accessories</ToggleButton>
             </ToggleButtonGroup>
             <div className="select text-start px-5 pb-5">
-                <form action="">
+                <form action="" className='d-flex '>
                     <input onChange={(e)=>{
                         setCountPrice({...CountPrice ,min: e.target.value})
                     }} value={CountPrice.min} className='px-3' type="text" placeholder='Min - Price'  />
                     <input onChange={(e)=>{
                         setCountPrice({...CountPrice ,max: e.target.value})
-                    }} value={CountPrice.max}  className='mx-2 px-3' type="text" placeholder='Max - Price'  />
+                    }} value={CountPrice.max}  className=' px-3' type="text" placeholder='Max - Price'  />
                     <button onClick={(e)=>{
                         handleFilterPrice(e)
                     }} className="">Submit</button>

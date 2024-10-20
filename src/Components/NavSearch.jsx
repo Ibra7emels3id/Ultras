@@ -38,7 +38,7 @@ const NavSearch = () => {
                     <div className="search d-flex align-items-center justify-content-center  m-auto text-center">
                         <input onChange={(e) => {
                             setDataSearch(e.target.value)
-                        }} className='w-100' type="search" name="" id="" />
+                        }} className='w-100' type="search" name="Search" id="Search" placeholder='Enter Your Search' />
                         <SearchIcon className='icon' sx={{ fontSize: '35px', margin: '0 -45px' }} />
                     </div>
                     <h6 className='Free-shipping p-0 m-0'>Free shipping on a purchase value of $200</h6>

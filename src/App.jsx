@@ -18,8 +18,8 @@ import Quote from './Components/Quote';
 import Articles from './Components/Articles';
 import BrandCollection from './Components/BrandCollection';
 import Ourteam from './Components/Ourteam';
-import Services from './Components/Services';
-import Footer from './Components/Footer';
+import Services from './Components/Services'; import Footer from './Components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import React tost
 import { ToastContainer, toast } from 'react-toastify';

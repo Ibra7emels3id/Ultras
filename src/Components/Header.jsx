@@ -127,7 +127,7 @@ const Header = () => {
                         <NavSearch />
                     </div>
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#"><img className='w-100' src={iconLogo} alt="" /></a>
+                        <Link className="navbar-brand" to="/"><img className='w-100' src={iconLogo} alt="" /></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

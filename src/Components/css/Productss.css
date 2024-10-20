@@ -24,6 +24,10 @@
     .css-kncgbn-MuiToggleButtonGroup-root{
         justify-content: center !important;
     }
+    .select form{
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .select form input{
